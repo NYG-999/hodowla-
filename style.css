@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #292421;
+    background: #fffaf5;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #b77a50;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    background: 
+    linear-gradient( 
+        120deg, 
+        #fff7ed, 
+        #f1dfcc 
+    );
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #b2764e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 70px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #b2764e;
+}
+
+.hero-description {
+    color: #6d6661;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    background: #b2764e;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #925d3b;
+
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    width: 450px;
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    border: 10px solid rgba(255,255,255,0.8);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   OGÓLNE SEKCJE
+========================= */
+
+.section {
+    padding: 100px 10%;
+
+    text-align: center;
+}
+
+.section h2,
+.dogs-section h2,
+.gallery-section h2,
+.contact h2 {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #706963;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CECHY
+========================= */
+
+.features {
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 60px;
+}
+
+.feature {
+    flex: 1;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.06);
+}
+
+.feature-icon {
+    font-size: 42px;
+
+    margin-bottom: 18px;
+}
+
+.feature h3 {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.feature p {
+    color: #777;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NASZE PSY
+========================= */
+
+.dogs-section {
+    padding: 100px 10%;
+
+    background: #f4ebe2;
+
+    text-align: center;
+}
+
+.dogs {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.dog-card {
+    flex: 1;
+
+    background: white;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.07);
+}
+
+.dog-card img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.dog-info {
+    padding: 25px;
+}
+
+.dog-info h3 {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.dog-info p {
+    color: #b2764e;
+
+    margin-bottom: 10px;
+}
+
+.dog-info span {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   SZCZENIĘTA
+========================= */
+
+.puppy-box {
+    max-width: 1000px;
+
+    margin: 50px auto 0;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 22px;
+
+    text-align: left;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.08);
+}
+
+.puppy-image {
+    width: 45%;
+
+    min-height: 450px;
+}
+
+.puppy-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.puppy-info {
+    width: 55%;
+
+    padding: 50px;
+}
+
+.available {
+    color: #41945d !important;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+.puppy-info h3 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.puppy-info > p {
+    color: #777;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.price {
+    margin-bottom: 30px;
+}
+
+.price small {
+    display: block;
+
+    color: #999;
+
+    margin-bottom: 5px;
+}
+
+.price strong {
+    font-size: 42px;
+
+    color: #b2764e;
+}
+
+
+/* =========================
+   GALERIA
+========================= */
+
+.gallery-section {
+    padding: 100px 10%;
+
+    text-align: center;
+
+    background: white;
+}
+
+.gallery {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   KONTAKT
+========================= */
+
+.contact {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: #352920;
+}
+
+.contact .subtitle {
+    color: #d6a37c;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact > p {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #d4cbc5;
+
+    line-height: 1.7;
+}
+
+.contact-data {
+    margin: 35px 0;
+}
+
+.contact-data p {
+    margin: 10px;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   STOPKA
+========================= */
+
+footer {
+    padding: 35px;
+
+    text-align: center;
+
+    background: #211914;
+
+    color: #999;
+}
+
+footer strong {
+    color: white;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 850px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 25px;
+
+        text-align: center;
+
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .dogs {
+        flex-direction: column;
+    }
+
+    .puppy-box {
+        flex-direction: column;
+    }
+
+    .puppy-image {
+        width: 100%;
+        height: 350px;
+        min-height: 0;
+    }
+
+    .puppy-info {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .section,
+    .dogs-section,
+    .gallery-section {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section h2,
+    .dogs-section h2,
+    .gallery-section h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 300px;
+    }
+
+    .price strong {
+        font-size: 35px;
+    }
+}
